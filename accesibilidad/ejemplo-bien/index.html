@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Ejemplo bien</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <h1>Elementos repetitivos - Ejemplo bien</h1>
+
+    <a class="sronly" href="#news-list">Ir al contenido principal</a>
+
+    <nav>
+        <ul>
+            <li><a href="#">menu 1</a>
+                <ul>
+                    <li><a href="#">submenu 1.1</a></li>
+                    <li><a href="#">submenu 1.2</a></li>
+                    <li><a href="#">submenu 1.3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">menu 2</a>
+                <ul>
+                    <li><a href="#">submenu 2.1</a></li>
+                    <li><a href="#">submenu 2.2</a></li>
+                    <li><a href="#">submenu 2.3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <hr />
+
+    <h1>Imágenes - Ejemplo bien</h1>
+
+    <p>
+        <a href="anterior.html"><img src="./img/flecha-izq.gif" alt="Anterior" /></a>
+        <a href="indice.html">Índice</a>
+        <a href="siguiente.html"><img src="./img/flecha-der.gif" alt="Siguiente" /></a>
+    </p>
+
+    <p>
+        Menu:
+        <ul>
+            <li><a href="unete.html">Únete</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="siguenos.html">Síguenos</a></li>
+        </ul>
+    </p>
+
+    <p>
+        Teléfono de contacto: <strong>999123456</strong>
+    </p>
+
+    <hr>
+    <h1>Mapas de imágenes - Ejemplo bien</h1>
+
+    <object type="image/jpg" data="./img/img-map-area.png" width="948" height="480" border="0" usemap="#map1">
+        <map name="map1">
+            <p>Navegar por este sitio:
+                <a shape="rect" coords="18,25,221,63" href="index.html">Inicio</a>
+                <a shape="rect" coords="337,40,396,64" href="unete.html">Unete</a>
+                <a shape="rect" coords="424,40,491,65" href="equipo.html">Equipo</a>
+                <a shape="rect" coords="520,41,612,64" href="contacto.html">Contacto</a>
+                <a shape="rect" coords="641,40,728,65" href="siguenos.html">Siguenos</a>
+                <a shape="rect" coords="16,344,400,397" href="meetup.html">Meetup</a>
+            </p>
+        </map>
+    </object>
+
+    <hr />
+
+    <h1>Enlaces - Ejemplo bien</h1>
+
+    <h2>A mi hija mayor se le ha caido su primer diente</h2>
+
+    <p>Estabamos desayunando cuando de repente sucedió.
+        <a href="noticia-hija-mayor.html">Más información<span class="sronly"> sobre
+    la noticia titulada "A mi hija mayor se le ha caido
+    su primer diente"</span>.</a></p>
+
+    <h2>A mi hija pequeña le ha salido su primera muela</h2>
+
+    <p>Después de comer, la pequeña dijo que le molestaba la boca.
+        <a href="noticia-hija-mayor.html">Más información<span class="sronly"> sobre
+    la noticia titulada "A mi hija pequeña le ha salido
+    su primera muela"</span>.</a></p>
+
+    <hr />
+
+    <h1>Organización - Ejemplo bien</h1>
+
+    <section>
+        <header>
+            <h1>Nombre de la empresa</h1>
+            <p>Eslogan de la empresa</p>
+        </header>
+
+        <section id="news-list">
+
+            <h2>Noticias</h2>
+
+            <article>
+                <h3>Noticia 1</h3>
+                <p>Desarrollo de la noticia 1</p>
+            </article>
+
+            <article>
+                <h3>Noticia 2</h3>
+                <p>Desarrollo de la noticia 2</p>
+            </article>
+
+        </section>
+    </section>
+
+    <hr />
+
+    <h1>Diagramas - Ejemplo bien</h1>
+
+    <img src="./img/disenio-centrado-usuario.png" alt="Diagrama de Diseño Centrado en el Usuario" longdesc="#descripcion1" />
+    <span class="sronly">El Diseño Centrado en el usuario tiene varias fases:
+      planificación, diseño, prototipado, evaluación, implementación y lanzamiento, mantenimiento y seguimiento</span>
+
+    <hr />
+
+    <h1>Tablas - Ejemplo bien</h1>
+
+    <table summary="Tabla de 5 columnas (días de la semana) y 4 filas (horas)." id="horarioClase" border="1">
+        <caption>Horario de clase</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th id="columnaLunes">Lunes</th>
+                <th id="columnaMartes">Martes</th>
+                <th id="columnaMiercoles">Miércoles</th>
+                <th id="columnaJueves">Jueves</th>
+                <th id="columnaViernes">Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="filaHora10">10:00</th>
+                <td headers="columnaLunes filaHora10">Matemáticas</td>
+                <td headers="columnaMartes filaHora10">Matemáticas</td>
+                <td headers="columnaMiercoles filaHora10">Matemáticas</td>
+                <td headers="columnaJueves filaHora10">Matemáticas</td>
+                <td headers="columnaViernes filaHora10">Matemáticas</td>
+            </tr>
+            <tr>
+                <th id="filaHora11">11:00</th>
+                <td headers="columnaLunes filaHora11">Lengua</td>
+                <td headers="columnaMartes filaHora11">Lengua</td>
+                <td headers="columnaMiercoles filaHora11">Lengua</td>
+                <td headers="columnaJueves filaHora11">Lengua</td>
+                <td headers="columnaViernes filaHora11">Lengua</td>
+            </tr>
+            <tr>
+                <th id="filaHora12">12:00</th>
+                <td headers="columnaLunes filaHora12">C.Sociales</td>
+                <td headers="columnaMartes filaHora12">C.Naturales</td>
+                <td headers="columnaMiercoles filaHora12">C.Sociales</td>
+                <td headers="columnaJueves filaHora12">C.Naturales</td>
+                <td headers="columnaViernes filaHora12">Deporte</td>
+            </tr>
+            <tr>
+                <th id="filaHora13">13:00</th>
+                <td headers="columnaLunes filaHora13">Inglés</td>
+                <td headers="columnaMartes filaHora13">Inglés</td>
+                <td headers="columnaMiercoles filaHora13">Inglés</td>
+                <td headers="columnaJueves filaHora13">Inglés</td>
+                <td headers="columnaViernes filaHora13">Músic</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr />
+
+    <h1>Formularios - Ejemplo bien</h1>
+
+    <form name="contacto" method="post" action="#">
+        <fieldset>
+            <legend>Información personal</legend>
+
+            <label for="nombre" tabindex="1">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" autofocus required />
+            <br/>
+
+            <label for="correo" tabindex="2">Correo ELectrónico:</label>
+            <input type="email" id="correo" name="correo" required />
+            <br/>
+
+            <label for="web" tabindex="3">Página personal:</label>
+            <input type="url" id="web" name="web" placeholder="URL de tu página web personal" />
+            <br/>
+
+        </fieldset>
+        <fieldset>
+            <legend>Otra información</legend>
+
+            <label for="fecha" tabindex="4">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" />
+            <br/>
+
+            <label for="mes" tabindex="5">Mes:</label>
+            <input type="month" id="mes" name="mes" />
+            <br/>
+
+            <label for="semana" tabindex="6">Semana:</label>
+            <input type="week" id="semana" name="semana" />
+            <br/>
+
+            <label for="tiempo" tabindex="7">Tiempo:</label>
+            <input type="time" id="tiempo" name="tiempo" />
+            <br/>
+
+            <label for="fechatiempo" tabindex="8">Fecha y tiempo:</label>
+            <input type="time" id="fechatiempo" name="fechatiempo" />
+            <br/>
+
+            <label for="numero" tabindex="9">Número (min -10, max 10):</label>
+            <input type="number" id="numero" name="numero" min="-10" max="10" value="0" />
+            <br/>
+
+            <label for="intervalo" tabindex="10">Intervalo (min 0, max 10):</label>
+            <input type="range" id="intervalo" name="intervalo" />
+            <output for="intervalo" name="intervalo">0</output>
+            <br/>
+
+            <label for="telefono" tabindex="11">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" />
+            <br/>
+
+            <label for="busqueda" tabindex="12">Búsqueda:</label>
+            <input type="search" id="busqueda" name="busqueda" />
+            <br/>
+
+            <label for="color_favorito" tabindex="13">Color Favorito:</label>
+            <input type="color" id="color_favorito" name="color_favorito" />
+            <br/>
+
+        </fieldset>
+        <fieldset>
+            <legend>Controles</legend>
+
+            <input type="reset" name="borrar" value="Borrar" />
+            <input type="submit" name="enviar" value="Enviar" />
+
+        </fieldset>
+    </form>
+
+    <hr />
+
+    <h1>Contraste - Ejemplo Bien</h1>
+
+    <div class="importante">Este texto es importante</div>
+
+    <hr />
+
+    <h1>WAI-ARIA - Tooltips - Ejemplo bien</h1>
+
+    <form>
+        <fieldset>
+            <legend>Formulario de entrada</legend>
+            <div>
+                <label for="username" class="etiqueta">Usuario</label>
+                <input type="text" id="username" aria-describedby="username-tip" required />
+                <div class="tooltip" role="tooltip" id="username-tip">Tu usuario es tu mail</div>
+            </div>
+            <div>
+                <label for="password" class="etiqueta">Contraseña</label>
+                <input type="text" id="password" aria-describedby="password-tip" required />
+                <div class="tooltip" role="tooltip" id="password-tip">Tu contraseña es secreta</div>
+            </div>
+        </fieldset>
+    </form>
+
+    <hr />
+
+    <h1>WAI-ARIA - Botón que actualiza valor - Ejemplo bien</h1>
+
+    <button id="obtener-random" type="button" title="Obtener Random" aria-controls="random">Obtener Random</button>
+    <span id="random" role="alert" aria-live="assertive">0</span>
+
+    <hr />
+
+    <h1>WAI-ARIA - Desplegables - Ejemplo bien</h1>
+
+    <button id="titulo-desplegable" aria-expanded="false" aria-controls="desplegable">Despliegame</button>
+    <div id="desplegable" class="hidden" aria-hidden="true">
+       <p>Aquí estoy... ^__^</p>
+    </div>
+
+    <hr />
+
+    <h1>WAI-ARIA -  - Ejemplo bien</h1>
+
+    <hr />
+
+    <h1>WAI-ARIA -  - Ejemplo bien</h1>
+
+    <hr />
+
+    <h1>WAI-ARIA -  - Ejemplo bien</h1>
+
+    <hr />
+
+    <h1>WAI-ARIA -  - Ejemplo bien</h1>
+
+    <hr />
+
+    <h1>WAI-ARIA -  - Ejemplo bien</h1>
+
+    <hr />
+
+    <script src="lib/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
