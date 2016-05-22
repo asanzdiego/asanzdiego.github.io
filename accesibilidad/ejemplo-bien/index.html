@@ -4,14 +4,14 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Ejemplo bien</title>
+    <title>Accesibilidad Ejemplo bien</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
 
-    <h1>Ejemplos bien</h1>
+    <h1 id="inicio">Accesibilidad Ejemplos bien</h1>
 
     <h2>Elementos repetitivos - Ejemplo bien</h2>
 
@@ -37,6 +37,70 @@
     </nav>
 
     <hr id="principal" />
+
+    <h2>Formularios - Ejemplo bien</h2>
+
+    <form name="contacto" method="post" action="#">
+        <fieldset>
+            <legend>Información personal</legend>
+
+            <label for="nombre" tabindex="1">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" autofocus="true" required="true" />
+
+            <label for="correo" tabindex="2">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required="true" />
+
+            <label for="web" tabindex="3">Página personal:</label>
+            <input type="url" id="web" name="web" placeholder="URL de tu página web personal" />
+
+        </fieldset>
+        <fieldset>
+            <legend>Otra información</legend>
+
+            <label for="fecha" tabindex="4">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" />
+
+            <label for="mes" tabindex="5">Mes:</label>
+            <input type="month" id="mes" name="mes" />
+
+            <label for="semana" tabindex="6">Semana:</label>
+            <input type="week" id="semana" name="semana" />
+
+            <label for="tiempo" tabindex="7">Tiempo:</label>
+            <input type="time" id="tiempo" name="tiempo" />
+
+            <label for="fechatiempo" tabindex="8">Fecha y tiempo:</label>
+            <input type="time" id="fechatiempo" name="fechatiempo" />
+
+            <label for="numero" tabindex="9">Número (min -10, max 10):</label>
+            <input type="number" id="numero" name="numero" min="-10" max="10" value="0" />
+
+            <label for="intervalo" tabindex="10">Intervalo (min 0, max 10):</label>
+            <input type="range" id="intervalo" name="intervalo" />
+            <output for="intervalo" name="intervalo">0</output>
+
+            <label for="telefono" tabindex="11">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" />
+
+            <label for="busqueda" tabindex="12">Búsqueda:</label>
+            <input type="search" id="busqueda" name="busqueda" />
+
+            <label for="color_favorito" tabindex="13">Color Favorito:</label>
+            <input type="color" id="color_favorito" name="color_favorito" />
+
+        </fieldset>
+        <fieldset>
+            <legend>Controles</legend>
+
+            <!--label for="borrar" tabindex="14">Borrar</label-->
+            <input id="borrar" type="reset" name="borrar" value="Borrar" />
+            <!--label for="enviar" tabindex="14">Enviar</label-->
+            <input id="enviar" type="submit" name="enviar" value="Enviar" />
+
+        </fieldset>
+    </form>
+
+    <hr />
 
     <h2>Imágenes - Ejemplo bien</h2>
 
@@ -137,12 +201,13 @@
         <caption>Horario de clase</caption>
         <thead>
             <tr>
-                <th id="vacio" scope="col"></td>
-                <th id="columnaLunes" scope="col">Lunes</th>
-                <th id="columnaMartes" scope="col">Martes</th>
-                <th id="columnaMiercoles" scope="col">Miércoles</th>
-                <th id="columnaJueves" scope="col">Jueves</th>
-                <th id="columnaViernes" scope="col">Viernes</th>
+                <th id="vacio" scope="col">
+                    </td>
+                    <th id="columnaLunes" scope="col">Lunes</th>
+                    <th id="columnaMartes" scope="col">Martes</th>
+                    <th id="columnaMiercoles" scope="col">Miércoles</th>
+                    <th id="columnaJueves" scope="col">Jueves</th>
+                    <th id="columnaViernes" scope="col">Viernes</th>
             </tr>
         </thead>
         <tbody>
@@ -180,70 +245,6 @@
             </tr>
         </tbody>
     </table>
-
-    <hr />
-
-    <h2>Formularios - Ejemplo bien</h2>
-
-    <form name="contacto" method="post" action="#">
-        <fieldset>
-            <legend>Información personal</legend>
-
-            <label for="nombre" tabindex="1">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" autofocus="true" required="true" />
-
-            <label for="correo" tabindex="2">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required="true" />
-
-            <label for="web" tabindex="3">Página personal:</label>
-            <input type="url" id="web" name="web" placeholder="URL de tu página web personal" />
-
-        </fieldset>
-        <fieldset>
-            <legend>Otra información</legend>
-
-            <label for="fecha" tabindex="4">Fecha:</label>
-            <input type="date" id="fecha" name="fecha" />
-
-            <label for="mes" tabindex="5">Mes:</label>
-            <input type="month" id="mes" name="mes" />
-
-            <label for="semana" tabindex="6">Semana:</label>
-            <input type="week" id="semana" name="semana" />
-
-            <label for="tiempo" tabindex="7">Tiempo:</label>
-            <input type="time" id="tiempo" name="tiempo" />
-
-            <label for="fechatiempo" tabindex="8">Fecha y tiempo:</label>
-            <input type="time" id="fechatiempo" name="fechatiempo" />
-
-            <label for="numero" tabindex="9">Número (min -10, max 10):</label>
-            <input type="number" id="numero" name="numero" min="-10" max="10" value="0" />
-
-            <label for="intervalo" tabindex="10">Intervalo (min 0, max 10):</label>
-            <input type="range" id="intervalo" name="intervalo" />
-            <output for="intervalo" name="intervalo">0</output>
-
-            <label for="telefono" tabindex="11">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" />
-
-            <label for="busqueda" tabindex="12">Búsqueda:</label>
-            <input type="search" id="busqueda" name="busqueda" />
-
-            <label for="color_favorito" tabindex="13">Color Favorito:</label>
-            <input type="color" id="color_favorito" name="color_favorito" />
-
-        </fieldset>
-        <fieldset>
-            <legend>Controles</legend>
-
-            <!--label for="borrar" tabindex="14">Borrar</label-->
-            <input id="borrar" type="reset" name="borrar" value="Borrar" />
-            <!--label for="enviar" tabindex="14">Enviar</label-->
-            <input id="enviar" type="submit" name="enviar" value="Enviar" />
-
-        </fieldset>
-    </form>
 
     <hr />
 
