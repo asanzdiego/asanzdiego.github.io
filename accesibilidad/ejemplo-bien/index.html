@@ -13,7 +13,7 @@
 
     <h1>Elementos repetitivos - Ejemplo bien</h1>
 
-    <a class="sronly" href="#news-list">Ir al contenido principal</a>
+    <a class="sronly" href="#principal">Ir al contenido principal</a>
 
     <nav>
         <ul>
@@ -34,7 +34,7 @@
         </ul>
     </nav>
 
-    <hr />
+    <hr id="principal" />
 
     <h1>Imágenes - Ejemplo bien</h1>
 
@@ -298,25 +298,14 @@
 
     <hr />
 
-    <h1>WAI-ARIA -  - Ejemplo bien</h1>
+    <h1>WAI-ARIA - Tabs con keydown - Ejemplo bien</h1>
 
-    <hr />
-
-    <h1>WAI-ARIA -  - Ejemplo bien</h1>
-
-    <hr />
-
-    <h1>WAI-ARIA -  - Ejemplo bien</h1>
-
-    <hr />
-
-    <h1>WAI-ARIA -  - Ejemplo bien</h1>
-
-    <hr />
-
-    <h1>WAI-ARIA -  - Ejemplo bien</h1>
-
-    <hr />
+    <ul class="tablist" role="tablist">
+     <li role="presentation"><a id="tab1" href="#section1" tabindex="0" class="tab selected" role="tab" aria-controls="section1" aria-selected="true">Sección 1</a></li>
+     <li role="presentation"><a id="tab2" href="#section2" tabindex="-1" class="tab" role="tab" aria-controls="section2">Sección 2</a></li>
+    </ul>
+    <section id="section1" class="tabpanel" role="tabpanel">Este es el cuertpo de la sección UNO</section>
+    <section id="section2" class="tabpanel hidden" role="tabpanel" aria-hidden="true">Este es el cuertpo de la sección DOS</section>
 
     <script src="lib/jquery.js"></script>
     <script src="js/scripts.js"></script>
