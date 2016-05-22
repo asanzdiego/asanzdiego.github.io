@@ -133,7 +133,7 @@
 
     <h2>Tablas - Ejemplo bien</h2>
 
-    <table summary="Tabla de 5 columnas (días de la semana) y 4 filas (horas)." id="horarioClase" border="1">
+    <table summary="Tabla de 5 columnas (días de la semana) y 4 filas (horas)." border="1">
         <caption>Horario de clase</caption>
         <thead>
             <tr>
@@ -231,7 +231,7 @@
 
             <label for="intervalo" tabindex="10">Intervalo (min 0, max 10):</label>
             <input type="range" id="intervalo" name="intervalo" />
-            <output for="intervalo" name="intervalo">0</output>
+            <!--output for="intervalo" name="intervalo">0</output-->
             <br/>
 
             <label for="telefono" tabindex="11">Teléfono:</label>
@@ -250,8 +250,10 @@
         <fieldset>
             <legend>Controles</legend>
 
-            <input type="reset" name="borrar" value="Borrar" />
-            <input type="submit" name="enviar" value="Enviar" />
+            <label for="borrar" tabindex="14">Borrar</label>
+            <input id="borrar" type="reset" name="borrar" value="Borrar" />
+            <label for="enviar" tabindex="14">Enviar</label>
+            <input id="enviar" type="submit" name="enviar" value="Enviar" />
 
         </fieldset>
     </form>
