@@ -98,21 +98,21 @@
 
     <section>
         <header>
-            <h1>Nombre de la empresa</h1>
+            <h2>Nombre de la empresa</h2>
             <p>Eslogan de la empresa</p>
         </header>
 
         <section id="news-list">
 
-            <h2>Noticias</h2>
+            <h3>Noticias</h3>
 
             <article>
-                <h3>Noticia 1</h3>
+                <h4>Noticia 1</h4>
                 <p>Desarrollo de la noticia 1</p>
             </article>
 
             <article>
-                <h3>Noticia 2</h3>
+                <h4>Noticia 2</h4>
                 <p>Desarrollo de la noticia 2</p>
             </article>
 
@@ -188,11 +188,11 @@
             <legend>Información personal</legend>
 
             <label for="nombre" tabindex="1">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" autofocus required />
+            <input type="text" id="nombre" name="nombre" autofocus="true" required="true" />
             <br/>
 
             <label for="correo" tabindex="2">Correo ELectrónico:</label>
-            <input type="email" id="correo" name="correo" required />
+            <input type="email" id="correo" name="correo" required="true" />
             <br/>
 
             <label for="web" tabindex="3">Página personal:</label>
@@ -269,12 +269,12 @@
             <legend>Formulario de entrada</legend>
             <div>
                 <label for="username" class="etiqueta">Usuario</label>
-                <input type="text" id="username" aria-describedby="username-tip" required />
+                <input type="text" id="username" aria-describedby="username-tip" required="true" />
                 <div class="tooltip" role="tooltip" id="username-tip">Tu usuario es tu mail</div>
             </div>
             <div>
                 <label for="password" class="etiqueta">Contraseña</label>
-                <input type="text" id="password" aria-describedby="password-tip" required />
+                <input type="text" id="password" aria-describedby="password-tip" required="true" />
                 <div class="tooltip" role="tooltip" id="password-tip">Tu contraseña es secreta</div>
             </div>
             <input type="submit" name="enviar" value="Enviar" />

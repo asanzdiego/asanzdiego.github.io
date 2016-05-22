@@ -173,9 +173,9 @@
     <form method="post" action="#">
         <p><strong>Información personal</strong></p>
         Nombre:
-        <input type="text" required />
+        <input type="text" required="true" />
         <br/> Correo ELectrónico:
-        <input type="email" required />
+        <input type="email" required="true" />
         <br/> Página personal:
         <input type="url" placeholder="URL de tu página web personal" />
         <br/>
@@ -223,12 +223,12 @@
             <legend>Formulario de entrada</legend>
             <div>
                 <label for="username" class="etiqueta">Usuario</label>
-                <input type="text" id="username" required />
+                <input type="text" id="username" required="true" />
                 <div class="tooltip">Tu usuario es tu mail</div>
             </div>
             <div>
                 <label for="password" class="etiqueta">Contraseña</label>
-                <input type="text" id="password" required />
+                <input type="text" id="password" required="true" />
                 <div class="tooltip">Tu contraseña es secreta</div>
             </div>
             <button type="button">Enviar</button>
