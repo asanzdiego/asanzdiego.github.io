@@ -5,6 +5,9 @@ ul {
 strong {
     font-size: 2em
 }
+label {
+  display:block;
+}
 .sronly {
     position: absolute;
     left: -9999em;
