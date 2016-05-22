@@ -6,7 +6,7 @@ strong {
     font-size: 2em
 }
 label {
-  display:block;
+    display: block;
 }
 .sronly {
     position: absolute;
@@ -56,30 +56,30 @@ input:focus + .tooltip {
     ;
 }
 a.tab {
-	background: #333;
-	color: #ccc;
-	padding: 1em 0.5em;
-	display: inline-block;
+    background: #333;
+    color: #ccc;
+    padding: 1em 0.5em;
+    display: inline-block;
 }
 a.selected, a.tab:focus {
-	background: #ccc;
-	color: #333;
-	border: 1px solid #333;
-	border-bottom: 0;
-	position: relative;
+    background: #ccc;
+    color: #333;
+    border: 1px solid #333;
+    border-bottom: 0;
+    position: relative;
 }
 a.tab:focus {
-	background: #eee;
+    background: #eee;
 }
 ul.tablist li {
-	display: inline-block;
-	list-style: none;
+    display: inline-block;
+    list-style: none;
 }
 section.tabpanel {
-	margin-top: 0;
-	padding: 1.5em;
-	border: 1px solid #333;
+    margin-top: 0;
+    padding: 1.5em;
+    border: 1px solid #333;
 }
 section.tabpanel:focus {
-	background: #eee;
+    background: #eee;
 }
