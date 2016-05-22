@@ -97,10 +97,8 @@
     <h1>Organización - Ejemplo bien</h1>
 
     <section>
-        <header>
-            <h2>Nombre de la empresa</h2>
-            <p>Eslogan de la empresa</p>
-        </header>
+        <h2>Nombre de la empresa</h2>
+        <p>Eslogan de la empresa</p>
 
         <section id="news-list">
 
@@ -136,16 +134,16 @@
         <thead>
             <tr>
                 <th></th>
-                <th id="columnaLunes">Lunes</th>
-                <th id="columnaMartes">Martes</th>
-                <th id="columnaMiercoles">Miércoles</th>
-                <th id="columnaJueves">Jueves</th>
-                <th id="columnaViernes">Viernes</th>
+                <th id="columnaLunes" scope="col">Lunes</th>
+                <th id="columnaMartes" scope="col">Martes</th>
+                <th id="columnaMiercoles" scope="col">Miércoles</th>
+                <th id="columnaJueves" scope="col">Jueves</th>
+                <th id="columnaViernes" scope="col">Viernes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th id="filaHora10">10:00</th>
+                <th id="filaHora10" scope="row">10:00</th>
                 <td headers="columnaLunes filaHora10">Matemáticas</td>
                 <td headers="columnaMartes filaHora10">Matemáticas</td>
                 <td headers="columnaMiercoles filaHora10">Matemáticas</td>
@@ -153,7 +151,7 @@
                 <td headers="columnaViernes filaHora10">Matemáticas</td>
             </tr>
             <tr>
-                <th id="filaHora11">11:00</th>
+                <th id="filaHora11" scope="row">11:00</th>
                 <td headers="columnaLunes filaHora11">Lengua</td>
                 <td headers="columnaMartes filaHora11">Lengua</td>
                 <td headers="columnaMiercoles filaHora11">Lengua</td>
@@ -161,7 +159,7 @@
                 <td headers="columnaViernes filaHora11">Lengua</td>
             </tr>
             <tr>
-                <th id="filaHora12">12:00</th>
+                <th id="filaHora12" scope="row">12:00</th>
                 <td headers="columnaLunes filaHora12">C.Sociales</td>
                 <td headers="columnaMartes filaHora12">C.Naturales</td>
                 <td headers="columnaMiercoles filaHora12">C.Sociales</td>
@@ -169,7 +167,7 @@
                 <td headers="columnaViernes filaHora12">Deporte</td>
             </tr>
             <tr>
-                <th id="filaHora13">13:00</th>
+                <th id="filaHora13" scope="row">13:00</th>
                 <td headers="columnaLunes filaHora13">Inglés</td>
                 <td headers="columnaMartes filaHora13">Inglés</td>
                 <td headers="columnaMiercoles filaHora13">Inglés</td>
@@ -294,7 +292,7 @@
 
     <button id="titulo-desplegable" aria-expanded="false" aria-controls="desplegable">Despliegame</button>
     <div id="desplegable" class="hidden" aria-hidden="true">
-       <p>Aquí estoy... ^__^</p>
+        <p>Aquí estoy... ^__^</p>
     </div>
 
     <hr />
@@ -302,8 +300,8 @@
     <h1>WAI-ARIA - Tabs con keydown - Ejemplo bien</h1>
 
     <ul class="tablist" role="tablist">
-     <li role="presentation"><a id="tab1" href="#section1" tabindex="0" class="tab selected" role="tab" aria-controls="section1" aria-selected="true">Sección 1</a></li>
-     <li role="presentation"><a id="tab2" href="#section2" tabindex="-1" class="tab" role="tab" aria-controls="section2">Sección 2</a></li>
+        <li role="presentation"><a id="tab1" href="#section1" tabindex="0" class="tab selected" role="tab" aria-controls="section1" aria-selected="true">Sección 1</a></li>
+        <li role="presentation"><a id="tab2" href="#section2" tabindex="-1" class="tab" role="tab" aria-controls="section2">Sección 2</a></li>
     </ul>
     <section id="section1" class="tabpanel" role="tabpanel">Este es el cuertpo de la sección UNO</section>
     <section id="section2" class="tabpanel hidden" role="tabpanel" aria-hidden="true">Este es el cuertpo de la sección DOS</section>
